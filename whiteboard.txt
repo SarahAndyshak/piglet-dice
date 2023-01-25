@@ -1,0 +1,86 @@
+FRIDAY OBJECTIVES FOR REFERENCE:
+Constructors and prototypes are used successfully.
+Application works as expected.
+Tests are included for each business logic behavior and code is committed after each test passes.
+Project is in a polished, portfolio-quality state.
+The prompt’s required functionality and baseline project requirements are in place by the deadline.
+
+GAME OBJECTIVES:
+
+WARM UP:
+First, carefully read each project description below, and decide which project to tackle with your partner. Then, work through the following questions as part of a pre-coding brainstorming session. Map out a basic approach for the project and get creative!
+
+What will happen when a user clicks "Play"?
+What objects will you need?
+What key-value pairs will each object need to contain in order for the game to work?
+What functions?
+How will these be triggered throughout the gameplay?
+How will information be collected from the user? How will it be displayed?
+When you have a broad overview of how you want to build your game, identify the simplest behavior, and perhaps what behaviors to tackle after that. Remember to start simple and work one step at a time.
+
+Write a program where two users can play Pig dice against each other. Start with your business logic, and once it is completed move onto your user interface logic.
+
+Use test-driven development to create your business logic. Include pseudocode tests in your README. After every passing test, make sure to commit your code.
+
+Make sure that your user interface and business logics are clearly separated, and practice separation of concerns when designing your user interface function.
+
+Further Exploration
+Add options to play one of the other variations of Pig Dice using two or more dice
+Add option to play the computer — easy or hard levels:
+Easy: Computer always stops after the second roll.
+Hard: Computer uses strategy based on current total and rolled dice.
+
+WORKING PLAN:
+
+SORT IT OUT: THE PLAN
+
+DAY 1: BACK END
+
+DAY 2: UI CUTE STUFF
+
+
+THE PLAN:
+two users each need their own way to play
+"CLICK" ROLL function
+an object for the dice: something to visualize their number when they click roll
+score holder function for both players
+something to count accumulated points
+add individual scores as they add up, 
+
+GAMEPLAY (FROM WIKIPEDIA):
+Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":
+If the player rolls a 1, they score nothing and it becomes the next player's turn.
+If the player rolls any other number, it is added to their turn total and the player's turn continues.
+If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.
+The first player to score 100 or more points wins.
+
+OBJECTS:
+one player (keys: turn score, running score)
+two player (keys: turn score, running score)
+dice = see a number 1-6 that represents their turn 
+
+FUNCTIONS/METHODS:
+"hold button" aka next players turn, which adds their score to their running total
+"start/new game button" reset both players scores to 0
+"roll button" generate number for your roll 
+tell them when it's the next person's turn (adding a message and hiding it, remove attribute when it equals 1 so it goes away and shows back up)
+adds turn score to running score (triggered when "hold turn" or roll a 1)
+
+hidden messages: 
+12= "oh look we've got a high roller"
+1 = "too bad for you, next players turn"
+
+
+EXTRA CREDIT: window alert spammy vibes for the winner! *The first player to score 100? or more points wins.*
+
+
+
+TDD:
+
+Describe: function PigletDice()
+
+* Test One
+Test: ""
+Code: 
+
+Expected Output:
