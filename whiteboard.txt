@@ -89,12 +89,3 @@ let pigletDice = function() {
 
 Test passes
 
-* Test Two
-Test: "It returns a random number."
-Code: 
- function pigletDice() 
-Expected Output: A random number, less than 1.
-
-let pigletDice = function() {
-  return Math.random();
-}
