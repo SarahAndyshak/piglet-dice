@@ -55,14 +55,14 @@ If a player chooses to "hold", their turn total is added to their score, and it 
 The first player to score 100 or more points wins.
 
 OBJECTS:
-one player (keys: turn score, running score)
-two player (keys: turn score, running score)
-dice = see a number 1-6 that represents their turn 
+one player (keys: turn score, running score) -done
+two player (keys: turn score, running score) -done
+dice = see a number 1-6 that represents their turn -done
 
 FUNCTIONS/METHODS:
+"roll button" generate number for your roll -done
 "hold button" aka next players turn, which adds their score to their running total
 "start/new game button" reset both players scores to 0
-"roll button" generate number for your roll 
 tell them when it's the next person's turn (adding a message and hiding it, remove attribute when it equals 1 so it goes away and shows back up)
 adds turn score to running score (triggered when "hold turn" or roll a 1)
 
@@ -101,3 +101,29 @@ function pigletDice() {
 
 Test passes
 
+
+Describe: function ()
+
+* Test One
+Test: "It should take the dice roll is 1 the player's turn is over."
+Code: 
+ function 
+Expected Output: 
+
+
+
+
+
+
+Note for us: We cannot update the score, until we have all the information from the start to finish of a turn, which can include multiple dice rolls and adding those totals up (or also the way you get nothing when you roll a 1)
+
+TDD FOR
+function ScoreUpdate
+
+* Test One
+Test: "This test will update the turn score and running total score of a player."
+Code: 
+pigletDice.prototype.scoreUpdate(){
+
+}
+Expected Output: 

@@ -1,3 +1,17 @@
 .hidden {
   display: none;
 }
+
+
+let eachTurn = []
+function turn(roll) {
+  for (let i = 1; i <= roll; i++)
+  console.log("index" + i);
+  if (i === 1) {
+    this.turnScore = 0;
+  }
+  else if (i !== 1) {
+    this.turnScore += roll;
+  };
+  return eachTurn.push(turn);
+}
