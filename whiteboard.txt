@@ -83,8 +83,20 @@ Code:
  function pigletDice() 
 Expected Output: A random number, less than 1.
 
-let pigletDice = function() {
+function pigletDice() {
   return Math.random();
+}
+
+Test passes
+
+* Test Two
+Test: "It returns a random number between 1 and 6."
+Code: 
+ function pigletDice() 
+Expected Output: A random number, between 1 and 6.
+
+function pigletDice() {
+  return parseInt(Math.random()*6 + 1);
 }
 
 Test passes

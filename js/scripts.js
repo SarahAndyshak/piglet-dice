@@ -12,11 +12,9 @@ function PlayerTwo(turnScore,runningScore) {
 }
 
 // Business Logic for Piglet Dice Function
-let pigletDice = function() {
-  return Math.random();
+function pigletDice() {
+  return parseInt(Math.random()*6 + 1);
 }
-
-
 
 // USER INTERFACE LOGIC
 
