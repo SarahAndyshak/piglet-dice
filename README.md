@@ -25,8 +25,6 @@ A game where two users can play Pig dice against each other. This is a multi-day
 
 * If you have questions or concerns please reach out to Mesha madsketchz@gmail.com, E Luckie eluckie.d@gmail.com, or Eliot eliot.lauren@gmail.com.
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
-
 ## Known Bugs
 
 * N/A

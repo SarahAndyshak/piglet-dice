@@ -73,14 +73,28 @@ hidden messages:
 
 EXTRA CREDIT: window alert spammy vibes for the winner! *The first player to score 100? or more points wins.*
 
-
-
 TDD:
 
-Describe: function PigletDice()
+Describe: function pigletDice()
 
 * Test One
-Test: ""
+Test: "It returns a random number."
 Code: 
+ function pigletDice() 
+Expected Output: A random number, less than 1.
 
-Expected Output:
+let pigletDice = function() {
+  return Math.random();
+}
+
+Test passes
+
+* Test Two
+Test: "It returns a random number."
+Code: 
+ function pigletDice() 
+Expected Output: A random number, less than 1.
+
+let pigletDice = function() {
+  return Math.random();
+}

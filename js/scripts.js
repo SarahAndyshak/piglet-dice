@@ -11,6 +11,11 @@ function PlayerTwo(turnScore,runningScore) {
   this.runningScore = runningScore;
 }
 
+// Business Logic for Piglet Dice Function
+let pigletDice = function() {
+  return Math.random();
+}
+
 
 
 // USER INTERFACE LOGIC
