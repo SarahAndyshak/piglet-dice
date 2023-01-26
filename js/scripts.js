@@ -1,59 +1,42 @@
 // BUSINESS LOGIC
 
 // Business Logic For Player Objects:
-function PlayerOne(turnScore, runningScore) {
-  this.turnScore = turnScore;
-  this.runningScore = runningScore;
+function Player(name) {
+  // this.throw = 0 //might not need this
+  this.turnScore = 0;
+  this.runningScore = 0;
+  this.name = name;
 }
 
-function PlayerTwo(turnScore, runningScore) {
-  this.turnScore = turnScore;
-  this.runningScore = runningScore;
-}
+//because our values are set to zero for the first three properties they do not need to be set in the parans)
 
-function pigletDice() {
-  let roll = parseInt(Math.random()*6 + 1);
-  return roll;
-}
+// Business Logic for Turn
 
-let eachTurn = [];
-function turn(roll) {
-  for (let i = 0; i !== 1; i++)
-  console.log("index" + i);
+Player.prototype.roll = function(roll) {
   if (roll === 1) {
     this.turnScore = 0;
   }
-  else if (roll !== 1) {
+  else {
     this.turnScore += roll;
   };
-  return eachTurn.push(turn);
+  return this.turnScore;
 }
-
-// Day 1 Notes: Leaving off on whether or not we need the above for Loop to help generate turn results.
 
 
 // Business Logic for Piglet Dice Function
 function pigletDice() {
-  let roll = parseInt(Math.random()*6 + 1);
+  let roll = Math.round(Math.random()*6 + 1);
   return roll;
 }
 // (Math is uppercase b/c it's a built in constructor)
 
-// Business Logic for Turn
-
-
 // Business Logic for scoreUpdate
 
-PlayerOne.prototype.scoreUpdate(roll) {
+Player.prototype.scoreUpdate(roll) {
   let turnScore = roll 
   turn running total = RunningTotal
 
 }
-
-PlayerTwo.prototype.scoreUpdate() {
-
-}
-
 
 // USER INTERFACE LOGIC
 

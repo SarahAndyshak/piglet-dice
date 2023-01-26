@@ -102,14 +102,14 @@ function pigletDice() {
 Test passes
 
 
-Describe: function ()
+Describe: Player.prototype.roll = function(roll)
 
 * Test One
-Test: "It should take the dice roll is 1 the player's turn is over."
+Test: "This should check if the score is 1."
 Code: 
- function 
-Expected Output: 
-
+let player = new Player();
+Player.roll(number);
+Expected Output: Turn score is updated as long as the roll is not equal to 1.
 
 
 
