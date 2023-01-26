@@ -2,7 +2,6 @@
 
 // Business Logic For Player Objects:
 function Player(name) {
-  // this.throw = 0 //might not need this
   this.turnScore = 0;
   this.runningScore = 0;
   this.name = name;
@@ -10,9 +9,10 @@ function Player(name) {
 
 //because our values are set to zero for the first three properties they do not need to be set in the parans)
 
-// Business Logic for Turn
+// Business Logic for TurnScore
 
-Player.prototype.roll = function(roll) {
+Player.prototype.roll = function() {
+  let roll = pigletDice();
   if (roll === 1) {
     this.turnScore = 0;
   }
@@ -22,7 +22,6 @@ Player.prototype.roll = function(roll) {
   return this.turnScore;
 }
 
-
 // Business Logic for Piglet Dice Function
 function pigletDice() {
   let roll = Math.round(Math.random()*6 + 1);
@@ -30,14 +29,19 @@ function pigletDice() {
 }
 // (Math is uppercase b/c it's a built in constructor)
 
-// Business Logic for scoreUpdate
+// Business Logic for RunningScore
 
-Player.prototype.scoreUpdate(roll) {
-  let turnScore = roll 
-  turn running total = RunningTotal
-
+Player.prototype.totalScore = function() {
+  let scoreInput = this.turnScore; 
+  this.runningScore += this.turnScore;
+  console.log("running score: " + this.runningScore);
+  return this.runningScore;
 }
 
+Player.prototype.totalScore = function() {
+  this.runningScore += this.turnScore;
+  return this.runningScore;
+}
 // USER INTERFACE LOGIC
 
 window.addEventListener("load", function() {
